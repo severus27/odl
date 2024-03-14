@@ -68,19 +68,7 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          {
-            label: "Courses",
-            items: [
-              {
-                to: "#",
-                label: "Machine Learning",
-              },
-              {
-                to: "#",
-                label: "LLM Training",
-              },
-            ],
-          },
+          { to: "/blog", label: "Courses", position: "left" },
           {
             label: "Resources",
             items: [
@@ -123,17 +111,17 @@ const config = {
             ],
           },
           {
-            href: "https://www.npmjs.com/package/dynamoose",
-            className: "header-link header-npm-link",
-            "aria-label": "npm",
-            position: "right"
-          },
-          {
             href: "https://github.com/dynamoose/dynamoose",
             className: "header-link header-github-link",
             "aria-label": "GitHub",
-            position: "right"
-          }
+            position: "right",
+          },
+          {
+            href: "https://discord.com/invite/QgZHExcssR",
+            className: "header-link header-discord-link",
+            "aria-label": "Discord",
+            position: "right",
+          },
         ],
       },
       footer: {
