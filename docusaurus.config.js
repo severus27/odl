@@ -1,12 +1,13 @@
 import { themes as prismThemes } from "prism-react-renderer";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Open DeepLearning",
+  title: "OpenDeepLearning",
   tagline: "Deep Learning is cool",
   favicon: "img/logo.png",
 
-  // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -14,7 +15,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
+  organizationName: "OpenDeepLearning", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -36,15 +37,13 @@ const config = {
         docs: {
           sidebarPath: "./sidebars.js",
           sidebarCollapsible: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
@@ -54,6 +53,15 @@ const config = {
       }),
     ],
   ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -61,7 +69,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Open DeepLearning",
+        title: "OpenDeepLearning",
         logo: {
           alt: "Logo",
           src: "img/logo.png",
@@ -69,30 +77,22 @@ const config = {
         hideOnScroll: true,
         items: [
           { to: "/blog", label: "Courses", position: "left" },
-          {
-            label: "Resources",
-            items: [
-              {
-                to: "#",
-                label: "Machine Learning",
-              },
-              {
-                to: "#",
-                label: "LLM Training",
-              },
-            ],
-          },
+          { to: "/blog", label: "Resources", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "More",
+            label: "Community",
             items: [
               {
-                to: "#",
-                label: "Machine Learning",
+                to: "/about",
+                label: "About",
               },
               {
                 to: "#",
-                label: "LLM Training",
+                label: "Contribute",
+              },
+              {
+                href: "emailto:teamopendeeplearning@gmail.com",
+                label: "Contact Us",
               },
             ],
           },
@@ -179,7 +179,7 @@ const config = {
             items: [
               {
                 label: "Contact Us",
-                href: "https://twitter.com/docusaurus",
+                href: "emailto:teamopendeeplearning@gmail.com",
               },
               {
                 label: "Contribute",
@@ -188,7 +188,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Open DeepLearning`,
+        copyright: `Copyright © ${new Date().getFullYear()} OpenDeepLearning`,
       },
       prism: {
         theme: prismThemes.github,
