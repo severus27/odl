@@ -1,6 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+// import remarkMath from 'remark-math';
+// import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -36,9 +36,9 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          sidebarCollapsible: true,
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          // sidebarCollapsible: true,
+          // remarkPlugins: [remarkMath],
+          // rehypePlugins: [rehypeKatex],
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
@@ -52,15 +52,6 @@ const config = {
         },
       }),
     ],
-  ],
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
   ],
 
   themeConfig:
@@ -76,11 +67,11 @@ const config = {
         },
         hideOnScroll: true,
         items: [
-          { to: "/blog", label: "Courses", position: "left" },
-          { to: "/blog", label: "Resources", position: "left" },
+          { to: "#", label: "Courses", position: "left" },
+          { to: "#", label: "Resources", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "Community",
+            label: "More",
             items: [
               {
                 to: "/about",
@@ -170,7 +161,7 @@ const config = {
               },
               {
                 label: "LinkedIn",
-                href: "https://twitter.com/docusaurus",
+                href: "https://www.linkedin.com/company/opendeeplearning",
               },
             ],
           },
