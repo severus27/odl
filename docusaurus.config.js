@@ -58,6 +58,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      colorMode: {
+        defaultMode: 'dark',
+      },
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "OpenDeepLearning",
@@ -71,7 +74,7 @@ const config = {
           { to: "#", label: "Resources", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "More",
+            label: "Company",
             items: [
               {
                 to: "/about",
@@ -119,14 +122,14 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Cources",
+            title: "Resources",
             items: [
               {
-                label: "LLM Training ",
+                label: "Cources",
                 to: "/docs/intro",
               },
               {
-                label: "Machine Learning ",
+                label: "Blog",
                 to: "/docs/intro",
               },
             ],
@@ -156,12 +159,12 @@ const config = {
                 href: "https://www.youtube.com/@Open_DeepLearning",
               },
               {
-                label: "X",
-                href: "https://twitter.com/Open_DL_AI",
-              },
-              {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/opendeeplearning",
+              },
+              {
+                label: "X (Twitter)",
+                href: "https://twitter.com/Open_DL_AI",
               },
             ],
           },
@@ -169,12 +172,12 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Contact Us",
-                href: "emailto:teamopendeeplearning@gmail.com",
-              },
-              {
                 label: "Contribute",
                 to: "#",
+              },
+              {
+                label: "Contact Us",
+                href: "emailto:teamopendeeplearning@gmail.com",
               },
             ],
           },
@@ -188,7 +191,7 @@ const config = {
       announcementBar: {
         id: "banner",
         content:
-          '<a target="_blank" class="banner" rel="noopener noreferrer" href="https://github.com/open-deeplearning/OpenML-Guide">Go give a ⭐ to Open DeepLearning on GitHub!</a>',
+          '<a target="_blank" class="banner" rel="noopener noreferrer" href="https://github.com/open-deeplearning/OpenML-Guide">Go give a ⭐ to OpenDeepLearning on GitHub!</a>',
         backgroundColor: "#0BA37F",
         textColor: "#000",
         isCloseable: true,
