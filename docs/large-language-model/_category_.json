@@ -1,0 +1,9 @@
+{
+    "label": "Large language Model",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    }
+  }
+  

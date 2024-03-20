@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRedditAlien, FaGithub, FaYoutube, FaDiscord } from "react-icons/fa";
+import { FaRedditAlien, FaGithub, FaYoutube, FaDiscord, FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 export const DiscordIcon = () => (
@@ -11,6 +11,19 @@ export const DiscordIcon = () => (
     <div style={{ display: "flex", gap: "5px" }}>
       <FaDiscord style={{ width: "18px", height: "18px", marginTop: "4px" }} />
       <div>Discord</div>
+    </div>
+  </a>
+);
+
+export const InstagramIcon = () => (
+  <a
+    href="https://www.instagram.com/opendeeplearning/"
+    target="black"
+    style={{ textDecoration: "none", display: "inline-flex" }}
+  >
+    <div style={{ display: "flex", gap: "5px" }}>
+      <FaInstagram style={{ width: "18px", height: "18px", marginTop: "4px" }} />
+      <div>Instagram</div>
     </div>
   </a>
 );

@@ -1,13 +1,12 @@
-
 /* -------------- THEME ------------- */
 :root {
-  --ifm-color-primary: #0ba37f;
-  --ifm-color-primary-dark: #0ba37f;
-  --ifm-color-primary-darker: #0ba37f;
-  --ifm-color-primary-darkest: #0ba37f;
-  --ifm-color-primary-light: #0ba37f;
-  --ifm-color-primary-lighter: #0ba37f;
-  --ifm-color-primary-lightest: #0ba37f;
+  --ifm-color-primary: #01685d;
+  --ifm-color-primary-dark: #01685d;
+  --ifm-color-primary-darker: #01685d;
+  --ifm-color-primary-darkest: #01685d;
+  --ifm-color-primary-light: #01685d;
+  --ifm-color-primary-lighter: #01685d;
+  --ifm-color-primary-lightest: #01685d;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -24,13 +23,55 @@
 }
 /* ------------------------------ */
 
+/* -------------- SEARCH ------------- */
+[data-theme="light"] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme="dark"] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+/* ------------------------------ */
+
+/* ---------- NAVBAR ---------- */
 .banner {
   text-decoration: none !important;
   font-size: 14px;
   font-weight: 500;
 }
 
-/* ----------LOGO TITLE ---------- */
 .navbar__title {
   font-size: 20px;
   font-weight: 600;
@@ -39,17 +80,12 @@ B {
   font-size: 20px;
   font-weight: 600;
 }
-/* ----------------------------- */
 
 .menu__list {
   font-size: 14.5px;
 }
 
-/* ------------- FOOTER ------------ */
-.header-github-link:hover {
-  opacity: 0.6;
-}
-
+/* ------------- ICONS ------------ */
 .header-github-link:before {
   content: "";
   width: 24px;
@@ -81,6 +117,10 @@ html[data-theme="dark"] .header-discord-link:before {
 .header-github-link:hover,
 .header-discord-link:hover {
   opacity: 0.6;
+}
+
+.header-discord-link {
+  padding-right: 17px;
 }
 /* ---------------------------- */
 
@@ -122,7 +162,6 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-
 /* --------- ABOUT PAGE --------- */
 .about-heading {
   padding-top: 16px;
@@ -130,3 +169,7 @@ html[data-theme="dark"] .header-discord-link:before {
   font-size: 32px;
 }
 /* ---------------------------- */
+
+ARTICLE .theme-doc-markdown li {
+  margin-bottom: 13px;
+}

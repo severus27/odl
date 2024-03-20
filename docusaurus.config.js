@@ -6,17 +6,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "OpenDeepLearning",
   tagline: "Deep Learning is cool",
-  favicon: "img/logo.png",
+  favicon: "img/favicon.png",
 
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: "OpenDeepLearning", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "OpenDeepLearning", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -36,7 +33,6 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // sidebarCollapsible: true,
           // remarkPlugins: [remarkMath],
           // rehypePlugins: [rehypeKatex],
           editUrl:
@@ -59,14 +55,21 @@ const config = {
     ({
       // Replace with your project's social card
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
+      },
+      algolia: {
+        appId: "O5MB1VTLJI",
+        apiKey: "6cc4ab582a75be521c8b5ade303820ed",
+        indexName: "openmlguide",
+        contextualSearch: true,
       },
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "OpenDeepLearning",
         logo: {
           alt: "Logo",
-          src: "img/logo.png",
+          src: "img/logo-light.png",
+          srcDark: "img/logo-dark.png",
         },
         hideOnScroll: true,
         items: [
@@ -105,7 +108,7 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/dynamoose/dynamoose",
+            href: "https://github.com/open-deeplearning/opendeeplearning",
             className: "header-link header-github-link",
             "aria-label": "GitHub",
             position: "right",
@@ -152,19 +155,23 @@ const config = {
             ],
           },
           {
-            title: "Follow Us",
+            title: "Connect",
             items: [
               {
                 label: "YouTube",
                 href: "https://www.youtube.com/@Open_DeepLearning",
               },
               {
+                label: "X",
+                href: "https://twitter.com/Open_DL_AI",
+              },
+              {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/company/opendeeplearning",
               },
               {
-                label: "X (Twitter)",
-                href: "https://twitter.com/Open_DL_AI",
+                label: "Instagram",
+                href: "https://www.instagram.com/opendeeplearning/",
               },
             ],
           },
