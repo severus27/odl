@@ -33,8 +33,6 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          // remarkPlugins: [remarkMath],
-          // rehypePlugins: [rehypeKatex],
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
@@ -54,6 +52,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       colorMode: {
         defaultMode: "dark",
       },
