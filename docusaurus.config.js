@@ -1,6 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
-// import remarkMath from 'remark-math';
-// import rehypeKatex from 'rehype-katex';
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -12,7 +12,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-  organizationName: "OpenDeepLearning", // Usually your GitHub org/user name.
+  organizationName: "Open-DeepLearning", // Usually your GitHub org/user name.
   projectName: "OpenDeepLearning", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -33,11 +33,16 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
+          showLastUpdateTime: true,
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
@@ -46,6 +51,15 @@ const config = {
         },
       }),
     ],
+  ],
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
+    },
   ],
 
   themeConfig:
@@ -72,28 +86,36 @@ const config = {
         title: "OpenDeepLearning",
         logo: {
           alt: "Logo",
-          src: "img/logo-light.png",
-          srcDark: "img/logo-dark.png",
+          src: "img/logo.png",
+          srcDark: "img/logo.png",
         },
         hideOnScroll: true,
         items: [
-          { to: "#", label: "Courses", position: "left" },
-          { to: "#", label: "Resources", position: "left" },
+          { to: "/courses", label: "Courses", position: "left" },
+          { to: "/resources", label: "Resources", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "Company",
+            label: "Community",
             items: [
               {
                 to: "/about",
-                label: "About",
+                label: "About Us",
               },
               {
                 to: "#",
                 label: "Contribute",
               },
               {
+                to: "#",
+                label: "Events",
+              },
+              {
+                to: "#",
+                label: "Competitions",
+              },
+              {
                 href: "emailto:teamopendeeplearning@gmail.com",
-                label: "Contact Us",
+                label: "Contact",
               },
             ],
           },
@@ -145,10 +167,6 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/open-deeplearning",
-              },
-              {
                 label: "Reddit",
                 href: "https://www.reddit.com/r/opendeeplearning/",
               },
@@ -156,18 +174,22 @@ const config = {
                 label: "Discord",
                 href: "https://discord.com/invite/QgZHExcssR",
               },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@Open_DeepLearning",
+              },
+              {
+                label: "Hugging Face",
+                href: "https://huggingface.co/OpenDeepLearning",
+              },
             ],
           },
           {
             title: "Connect",
             items: [
               {
-                label: "YouTube",
-                href: "https://www.youtube.com/@Open_DeepLearning",
-              },
-              {
-                label: "X",
-                href: "https://twitter.com/Open_DL_AI",
+                label: "GitHub",
+                href: "https://github.com/open-deeplearning",
               },
               {
                 label: "LinkedIn",
@@ -176,6 +198,10 @@ const config = {
               {
                 label: "Instagram",
                 href: "https://www.instagram.com/opendeeplearning/",
+              },
+              {
+                label: "X (Twitter)",
+                href: "https://twitter.com/Open_DL_AI",
               },
             ],
           },
@@ -202,8 +228,8 @@ const config = {
       announcementBar: {
         id: "banner",
         content:
-          '<a target="_blank" class="banner" rel="noopener noreferrer" href="https://github.com/open-deeplearning/OpenML-Guide">Go give a ⭐ to OpenDeepLearning on GitHub!</a>',
-        backgroundColor: "#0BA37F",
+          '<a target="_blank" class="banner" rel="noopener noreferrer" href="https://github.com/open-deeplearning/opendeeplearning">Go give a ⭐ to OpenDeepLearning on GitHub!</a>',
+        backgroundColor: "#0ba37f",
         textColor: "#000",
         isCloseable: true,
       },

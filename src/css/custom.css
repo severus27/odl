@@ -1,12 +1,12 @@
 /* -------------- THEME ------------- */
 :root {
-  --ifm-color-primary: #01685d;
-  --ifm-color-primary-dark: #01685d;
-  --ifm-color-primary-darker: #01685d;
-  --ifm-color-primary-darkest: #01685d;
-  --ifm-color-primary-light: #01685d;
-  --ifm-color-primary-lighter: #01685d;
-  --ifm-color-primary-lightest: #01685d;
+  --ifm-color-primary: #1b7f64;
+  --ifm-color-primary-dark: #1b7f64;
+  --ifm-color-primary-darker: #1b7f64;
+  --ifm-color-primary-darkest: #1b7f64;
+  --ifm-color-primary-light: #1b7f64;
+  --ifm-color-primary-lighter: #1b7f64;
+  --ifm-color-primary-lightest: #1b7f64;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -21,6 +21,7 @@
   --ifm-color-primary-lightest: #0ba37f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
 /* ------------------------------ */
 
 /* -------------- SEARCH ------------- */
@@ -68,7 +69,7 @@
 /* ---------- NAVBAR ---------- */
 .banner {
   text-decoration: none !important;
-  font-size: 14px;
+  font-size: 14.8px;
   font-weight: 500;
 }
 
@@ -147,6 +148,10 @@ html[data-theme="dark"] .header-discord-link:before {
   color: #e3e3e3;
 }
 
+[data-theme="dark"] .footer__copyright {
+  color: #939495;
+}
+
 .footer--dark {
   background-color: #f5f6f7;
 }
@@ -158,18 +163,18 @@ html[data-theme="dark"] .header-discord-link:before {
 
 .footer--dark,
 .footer__link-item {
-  color: #5f6770;
+  color: #1c1e21;
 }
 /* ---------------------------- */
 
-/* --------- ABOUT PAGE --------- */
-.about-heading {
-  padding-top: 16px;
-  padding-bottom: 8px;
-  font-size: 32px;
-}
 /* ---------------------------- */
-
 ARTICLE .theme-doc-markdown li {
   margin-bottom: 13px;
 }
+/* ---------------------------- */
+
+/* ------ LAST UPDATED TIME ----- */
+TIME {
+  font-size: 13.33px;
+}
+/* ---------------------------- */
