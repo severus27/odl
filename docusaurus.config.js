@@ -47,11 +47,12 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/css/custom.scss",
         },
       }),
     ],
   ],
+  plugins: ['docusaurus-plugin-sass'],
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
@@ -103,10 +104,6 @@ const config = {
               },
               {
                 to: "#",
-                label: "Contribute",
-              },
-              {
-                to: "#",
                 label: "Events",
               },
               {
@@ -114,8 +111,12 @@ const config = {
                 label: "Competitions",
               },
               {
+                to: "#",
+                label: "Contributing",
+              },
+              {
                 href: "emailto:teamopendeeplearning@gmail.com",
-                label: "Contact",
+                label: "Contact Us",
               },
             ],
           },
