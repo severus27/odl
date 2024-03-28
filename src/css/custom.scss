@@ -46,7 +46,7 @@
     /* Modal */
     --docsearch-modal-background: var(--ifm-background-color);
     /* Search box */
-    --docsearch-searchbox-background: #1b1b1d;
+    --docsearch-searchbox-background: #242526;
     --docsearch-searchbox-focus-background: var(--ifm-color-black);
     /* Hit */
     --docsearch-hit-color: var(--ifm-font-color-base);
@@ -63,13 +63,14 @@
     // border-radius: 8px;
   }
 
-  .navbar {
-    background: #1b1b1d;
-    border-bottom: 0.5px solid #44494f;
-  }
+  // .navbar {
+  //   background: #1b1b1d;
+  //   border-bottom: 0.5px solid #44494f;
+  // }
 }
 
 /* ---------- NAVBAR ---------- */
+
 .banner {
   text-decoration: none !important;
   font-size: 14.8px;
