@@ -15,7 +15,7 @@ const Card = ({ imageUrl, title, description }) => {
           </small>
         </div>
         <div className="card__footer">
-          <h5> 🟢 Deep Learning</h5>
+          <h5> Deep Learning</h5>
         </div>
       </a>
     </div>

@@ -52,7 +52,7 @@ const config = {
       }),
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ["docusaurus-plugin-sass"],
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
@@ -146,6 +146,12 @@ const config = {
             "aria-label": "Discord",
             position: "right",
           },
+          // {
+          //   href: "https://twitter.com/Open_DL_AI",
+          //   className: "header-link header-twitter-link",
+          //   "aria-label": "Twitter",
+          //   position: "right",
+          // },
         ],
       },
       footer: {

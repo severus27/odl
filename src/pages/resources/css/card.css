@@ -1,13 +1,4 @@
-.content-container {
-  padding: 0 20px;
-}
-
-@media (min-width: 1200px) {
-  .content-container {
-    padding: 0 200px;
-  }
-}
-
+/* 
 .card {
   width: auto;
   height: 550px;
@@ -37,4 +28,4 @@
 
 [data-theme="dark"] .select_button {
   color: #ffffff !important;
-}
+} */

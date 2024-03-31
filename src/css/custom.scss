@@ -9,24 +9,6 @@
   --ifm-color-primary-lightest: #1b7f64;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
-  .DocSearch {
-    --docsearch-primary-color: var(--ifm-color-primary);
-    --docsearch-text-color: var(--ifm-font-color-base);
-    --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-    --docsearch-container-background: rgba(94, 100, 112, 0.7);
-    /* Modal */
-    --docsearch-modal-background: var(--ifm-color-secondary-lighter);
-    /* Search box */
-    --docsearch-searchbox-background: var(--ifm-color-secondary);
-    --docsearch-searchbox-focus-background: var(--ifm-color-white);
-    /* Hit */
-    --docsearch-hit-color: var(--ifm-font-color-base);
-    --docsearch-hit-active-color: var(--ifm-color-white);
-    --docsearch-hit-background: var(--ifm-color-white);
-    /* Footer */
-    --docsearch-footer-background: var(--ifm-color-white);
-  }
 }
 
 [data-theme="dark"] {
@@ -38,39 +20,71 @@
   --ifm-color-primary-lighter: #0ba37f;
   --ifm-color-primary-lightest: #0ba37f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+// ------------------------------
 
-  .DocSearch {
-    --docsearch-text-color: var(--ifm-font-color-base);
-    --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-    --docsearch-container-background: rgba(47, 55, 69, 0.7);
-    /* Modal */
-    --docsearch-modal-background: var(--ifm-background-color);
-    /* Search box */
-    --docsearch-searchbox-background: #242526;
-    --docsearch-searchbox-focus-background: var(--ifm-color-black);
-    /* Hit */
-    --docsearch-hit-color: var(--ifm-font-color-base);
-    --docsearch-hit-active-color: var(--ifm-color-white);
-    --docsearch-hit-background: var(--ifm-color-emphasis-100);
-    /* Footer */
-    --docsearch-footer-background: var(--ifm-background-surface-color);
-    --docsearch-key-gradient: linear-gradient(
-      -26.5deg,
-      var(--ifm-color-emphasis-200) 0%,
-      var(--ifm-color-emphasis-100) 100%
-    );
-    border: 1px solid #44494f;
-    // border-radius: 8px;
-  }
-
-  // .navbar {
-  //   background: #1b1b1d;
-  //   border-bottom: 0.5px solid #44494f;
-  // }
+// ----------- SEARCH -----------
+.DocSearch-Button {
+  border-radius: 5px !important ;
 }
 
-/* ---------- NAVBAR ---------- */
+.DocSearch-Search-Icon {
+  height: 16px;
+  width: 16px;
+}
 
+.DocSearch-Button-Placeholder {
+  padding-left: 13px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .DocSearch-Button-Container {
+    min-width: 145px;
+  }
+}
+
+[data-theme="light"] .DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary); */
+  /* --docsearch-text-color: var(--ifm-font-color-base); */
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+
+[data-theme="dark"] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+// ------------------------------
+
+/* ---------- NAVBAR ---------- */
 .banner {
   text-decoration: none !important;
   font-size: 14.8px;
@@ -78,11 +92,11 @@
 }
 
 .navbar__title {
-  font-size: 23px;
+  font-size: 22.5px;
   font-weight: 600;
 }
 B {
-  font-size: 23px;
+  font-size: 22.5px;
   font-weight: 600;
 }
 
@@ -119,8 +133,23 @@ html[data-theme="dark"] .header-discord-link:before {
     no-repeat;
 }
 
+// .header-twitter-link:before {
+//   content: "";
+//   width: 24px;
+//   height: 24px;
+//   display: flex;
+//   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 512 512' aria-hidden='true'%3E%3Cpath d='M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z' %3E%3C/path%3E%3C/svg%3E")
+//     no-repeat;
+// }
+
+// html[data-theme="dark"] .header-twitter-link:before {
+//   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 512 512' aria-hidden='true'%3E%3Cpath d='M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z' %3E%3C/path%3E%3C/svg%3E")
+//     no-repeat;
+// }
+
 .header-github-link:hover,
-.header-discord-link:hover {
+.header-discord-link:hover,
+.header-twitter-link:hover {
   opacity: 0.6;
 }
 

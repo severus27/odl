@@ -1,0 +1,47 @@
+.content-container {
+  padding: 0 20px;
+}
+
+@media (min-width: 1200px) {
+  .content-container {
+    padding: 0 45px;
+  }
+}
+
+.card-container {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+}
+
+.card-container:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.description {
+  font-size: 14.5px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 470px;
+}
+
+.card__image img {
+  width: 100%;
+  height: auto;
+}
+
+.card__body {
+  padding: 16px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
