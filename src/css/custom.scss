@@ -12,34 +12,44 @@
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #0ba37f;
-  --ifm-color-primary-dark: #0ba37f;
-  --ifm-color-primary-darker: #0ba37f;
-  --ifm-color-primary-darkest: #0ba37f;
-  --ifm-color-primary-light: #0ba37f;
-  --ifm-color-primary-lighter: #0ba37f;
+  --ifm-color-primary: #24C19F;
+  --ifm-color-primary-dark: #24c19f;
+  --ifm-color-primary-darker: #24c19f;
+  --ifm-color-primary-darkest: #24c19f;
+  --ifm-color-primary-light: #24c19f;
+  --ifm-color-primary-lighter: #24c19f;
   --ifm-color-primary-lightest: #0ba37f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  background: #191919;
+
+  .navbar {
+    background: #232323;
+    height: 62px;
+    // border-bottom: 0.5px solid #44494F;
+  }
 }
+
 // ------------------------------
 
 // ----------- SEARCH -----------
 .DocSearch-Button {
-  border-radius: 5px !important ;
+  // border-radius: 4px !important ;
+  border: 0.8px solid #44494F !important;
 }
 
 .DocSearch-Search-Icon {
-  height: 16px;
-  width: 16px;
+  height: 17px;
+  width: 17px;
+  margin-left: 3px !important;
 }
 
 .DocSearch-Button-Placeholder {
-  padding-left: 13px !important;
+  padding-left: 12px !important;
 }
 
 @media screen and (min-width: 768px) {
   .DocSearch-Button-Container {
-    min-width: 145px;
+    min-width: 158px;
   }
 }
 
@@ -68,7 +78,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-background-color);
+  --docsearch-searchbox-background: ; 
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -91,13 +101,19 @@
   font-weight: 500;
 }
 
+.navbar__brand{
+  padding-left: 5px;
+}
+
 .navbar__title {
   font-size: 22.5px;
   font-weight: 600;
+  padding-bottom: 4px;
 }
 B {
   font-size: 22.5px;
   font-weight: 600;
+  padding-bottom: 4px;
 }
 
 .menu__list {
@@ -200,14 +216,51 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-/* ---------------------------- */
-ARTICLE .theme-doc-markdown li {
-  margin-bottom: 13px;
+.breadcrumbs{
+  padding-top: 4px !important;
 }
-/* ---------------------------- */
+
+ARTICLE H1{
+  padding-top: 5px !important;
+}
 
 /* ------ LAST UPDATED TIME ----- */
 TIME {
   font-size: 13.33px;
+}
+/* ---------------------------- */
+
+[data-theme="dark"] pre code {
+  background: #212121
+}
+
+/* ---------- BADGES ------------ */
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badges-container > div:first-child {
+  margin-left: 0;
+}
+
+.badges-container > div:last-child {
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .badges-container {
+    flex-direction: column;
+  }
+
+  .badges-container > div:last-child {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .badge {
+    padding: 0;
+  }
 }
 /* ---------------------------- */

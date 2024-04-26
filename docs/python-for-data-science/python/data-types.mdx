@@ -1,0 +1,253 @@
+---
+sidebar_position: 3
+title: Data Types
+description: Explore integers, floats, booleans, and strings.
+---
+
+<div class="badges-container">
+  # Data Types
+  <div class="badge">
+    [![Open In
+    Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/username/repository/blob/branch/path_to_notebook.ipynb)
+  </div>
+</div>
+
+In programming, data types are the classifications of different kinds of values that a program can work with. Each data type has its own set of rules and operations that can be performed on it.
+In Python, there are several built-in data types, and each type has its own set of characteristics and operations that can be performed on them.
+
+However, in this course, we will focus on the basic data types that are frequently used.
+
+## Integers
+
+Integers are numbers without any fractional part and can be positive (`1`, `2`, `3`, ...), negative (`-1`, `-2`, `-3`, ...), or zero (`0`).
+
+In the code cell below, we set a variable x to an integer. We then verify the data type with `type()`, and need only pass the variable name into the parentheses.
+
+```py
+x = 10
+print(x)
+print(type(x))
+```
+
+```sh title="Output"
+10
+<class 'int'>
+```
+
+In the output above, `<class 'int'>` refers to the integer data type.
+
+## Floats
+
+Floating-point numbers are decimal numbers, containing a fractional part.
+
+```py
+pi = 3.14159265358979323846264  # nearly pi
+print(pi)
+print(type(pi))
+```
+
+```sh title="Output"
+3.141592653589793
+<class 'float'>
+```
+
+We can also specify a float with a fraction.
+
+```py
+pi = 22/7
+print(pi)
+print(type(pi))
+```
+
+```sh title="Output"
+3.142857142857143
+<class 'float'>
+```
+
+In the above output, the decimal number seems too big. Generally, we only need decimals up to four places for most things, anything beyond that often doesn't significantly change the value.
+
+One function that is particularly useful for such fractions is the `round()` function. It lets you round a number to a specified number of decimal places.
+
+```py
+pi = 22/7
+rounded_pi = round(pi, 4)  # Round to 4 decimal places
+print(rounded_pi)
+print(type(rounded_pi))
+```
+
+```sh title="Output"
+3.1428
+<class 'float'>
+```
+
+:::note
+It's important to note that integers and floats have different behaviors and properties. For example, dividing two integers will result in an integer, while dividing a float by an integer or another float will produce a float:
+
+```py
+result1 = 10 / 3
+result2 = 10 // 3
+```
+
+```sh title="Output"
+3.3333333333333335
+3
+```
+
+:::
+
+In the first calculation, `10 / 3` results in a float (`3.3333333333333335`) because at least one of the operands is a float (Python treats `10` as `10.0` in this case). In the second calculation, `10 // 3` performs integer division, resulting in an integer (`3`).
+
+:::note
+Whenever you write an number with a decimal point, Python recognizes it as a float data type.
+
+For example, `7.` (or `7.0`, `7.00`, etc) will be recognized as a float. This is the case, even though these numbers technically have no fractional part!
+
+```py
+x = 7.
+print(x)
+print(type(x))
+```
+
+```sh title="Output"
+7.0
+<class 'float'>
+```
+
+:::
+
+## Booleans
+
+Booleans represent one of two possible values: `True` or `False`. These values are used to express logical conditions and control the flow of a program.
+
+In the code cell below, we'll set the variable `x` to a Boolean value of `True`:
+
+```py
+x = True
+print(x)
+print(type(x))
+```
+
+```sh title="Output"
+True
+<class 'bool'>
+```
+
+### Comparison Operators
+
+We can use comparison operators like `==`, `!=`, `<`, `>`, `<=`, and `>=` to compare values and get a Boolean result.
+
+```py
+x = 5
+y = 10
+print(x == y)   # Output: False
+print(x != y)   # Output: True
+print(x < y)    # Output: True
+print(x > y)    # Output: False
+print(x <= y)   # Output: True
+print(x >= y)   # Output: False
+```
+
+### Boolean Operators
+
+Python provides logical operators `and`, `or`, and `not` to combine or negate Boolean values.
+
+```py
+age = 18
+is_student = True
+
+print(age >= 18 and is_student)  # Output: True (both conditions are True)
+print(age >= 21 or is_student)   # Output: True (at least one condition is True)
+print(not is_student)           # Output: False (negation of True)
+```
+
+### Conditional Statements
+
+Booleans are essential for controlling the flow of a program using `if`, `elif`, and `else` statements.
+
+```py
+num = 7
+
+if num > 0:
+    print("The number is positive.")
+elif num < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+```
+
+```sh title="Output"
+The number is positive.
+```
+
+## Strings
+
+Strings in Python are a sequence of characters (like alphabet, numerical digits, or symbols) enclosed within single quotes (`'`), double quotes (`"`), or triple quotes (`'''` or `"""`).
+
+### String Literals
+
+You can create string literals by enclosing the characters within single, double, or triple quotes.
+
+```py
+message1 = 'Hello, world!'
+message2 = "Python is awesome!"
+message3 = '''This is a
+multi-line
+string.'''
+
+print(message1)
+print(message2)
+print(message3)
+```
+
+```sh title="Output"
+Hello, world!
+Python is awesome!
+This is a
+multi-line
+string.
+```
+
+### String Indexing and Slicing
+
+Strings are zero-indexed, meaning the first character has an index of `0`. You can access individual characters or substrings using indexing and slicing.
+
+```py
+greeting = "Hello, Python!"
+print(greeting[0])
+print(greeting[7:13])
+```
+
+```sh title="Output"
+'H'
+'Python'
+```
+
+### String Concatenation
+
+You can combine strings using the `+` operator to create a new string.
+
+```py
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)
+```
+
+```sh title="Output"
+"John Doe"
+```
+
+:::note
+You can't subtract or divide two strings. Also, you can't multiply two strings together, but you can repeat a string by multiplying it with a number. This makes a new string that's the original one repeated the specified number of times.
+
+```py
+str_multiply = "python" * 4
+print(str_multiply)
+print(type(str_multiply))
+```
+
+```sh title="Output"
+pythonpythonpythonpython
+```
+
+:::

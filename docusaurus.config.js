@@ -53,6 +53,7 @@ const config = {
     ],
   ],
   plugins: ["docusaurus-plugin-sass"],
+  themes: ["@docusaurus/theme-live-codeblock"],
   stylesheets: [
     {
       href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
@@ -236,7 +237,7 @@ const config = {
         id: "banner",
         content:
           '<a target="_blank" class="banner" rel="noopener noreferrer" href="https://github.com/open-deeplearning/opendeeplearning">Go give a ⭐ to OpenDeepLearning on GitHub!</a>',
-        backgroundColor: "#0ba37f",
+        backgroundColor: "#24C19F",
         textColor: "#000",
         isCloseable: true,
       },
