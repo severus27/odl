@@ -23,9 +23,9 @@
   background: #191919;
 
   .navbar {
-    background: #232323;
+    background: #191919;
     height: 62px;
-    // border-bottom: 0.5px solid #44494F;
+    border-bottom: 0.8px solid #44494F;
   }
 }
 
@@ -33,8 +33,8 @@
 
 // ----------- SEARCH -----------
 .DocSearch-Button {
-  // border-radius: 4px !important ;
-  border: 0.8px solid #44494F !important;
+  border-radius: 4px !important ;
+  // border: 0.8px solid #44494F !important;
 }
 
 .DocSearch-Search-Icon {
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 768px) {
   .DocSearch-Button-Container {
-    min-width: 158px;
+    min-width: 170px;
   }
 }
 
@@ -78,7 +78,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
-  --docsearch-searchbox-background: ; 
+  --docsearch-searchbox-background: #272727; 
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -102,7 +102,7 @@
 }
 
 .navbar__brand{
-  padding-left: 5px;
+  padding-left: 1px;
 }
 
 .navbar__title {
@@ -222,6 +222,10 @@ html[data-theme="dark"] .header-discord-link:before {
 
 ARTICLE H1{
   padding-top: 5px !important;
+}
+
+.menu {
+  margin-top: 5px;
 }
 
 /* ------ LAST UPDATED TIME ----- */

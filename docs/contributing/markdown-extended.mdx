@@ -1,0 +1,38 @@
+---
+title: Extended Markdown
+sidebar_label: Extended Markdown
+sidebar_position: 2
+---
+
+OpenDeepLearning utilizes [Extended Markdown](https://www.markdownguide.org/extended-syntax/) to create and manage the content you see here. 
+
+Extended Markdown is a powerful markup language that combines Markdown's simplicity with React components' flexibility, allowing users to write content with both Markdown syntax and interactive React elements.
+
+## Using Extended Markdown
+
+To write Extended Markdown, you have to create files with the `.mdx` extension. Within these files, you can follow the standard [Markdown syntax](https://www.markdownguide.org/basic-syntax/) and additionally use [JSX syntax](https://legacy.reactjs.org/docs/introducing-jsx.html) to embed React components directly into your Markdown content. 
+
+Here's an example of how you can write MDX:
+
+```mdx title="example.mdx"
+import MyComponent from './MyComponent';
+import Code from './Code';
+
+# This is a Heading
+
+This is a paragraph with **bold** and _italic_ text.
+
+- This is a list item
+- And another one
+
+You can embed React components like this:
+
+<MyComponent someProperty="value" />
+```
+
+This example shows how to use React components in Markdown files. The code embeds the `<MyComponent>` with a prop, and an inline component. It imports `MyComponent` and the inline component from separate files before using them in the MDX file.
+
+## Learn Extended Markdown
+
+You can learn more about Extended Markdown from their [documentation](https://www.markdownguide.org/extended-syntax/).
+

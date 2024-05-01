@@ -1,8 +1,9 @@
-# Website
+<div align="center">
+  <a href="https://www.openmlguide.org/" target="_blank" >
+    <img src="static/img/readme_logo.png" alt="OpenML Guide" width="450"/>
+  </a>
+</div>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-### Installation
 
 ```
 $ yarn
