@@ -26,6 +26,5 @@ If you believe that someone has violated the OpenDeepLearning Code of Conduct, p
 
 Violation of the OpenDeepLearning Code of Conduct may result in corrective action, including warnings, temporary or permanent bans from the community, or other measures deemed appropriate by the project maintainers. We are committed to ensuring that all members of our community feel safe and respected.
 
-## Conclusion
 
 By participating in the OpenDeepLearning community, you agree to abide by the principles outlined in this Code of Conduct. Together, we can create a welcoming and inclusive environment where everyone can contribute and thrive.
