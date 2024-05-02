@@ -1,4 +1,4 @@
-# Security  
+# Security Policy
 
 OpenDeepLearning is committed to ensuring the security and integrity of our platform, which primarily consists of free resources. While we do not collect user data or handle sensitive information, we take all security matters seriously. This Security Policy outlines our approach to handling security vulnerabilities and ensuring a safe browsing experience for our users.
 
