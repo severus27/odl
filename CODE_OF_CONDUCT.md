@@ -1,4 +1,4 @@
-# OpenDeepLearning Code of Conduct
+# Code of Conduct
 
 OpenDeepLearning is dedicated to providing a welcoming and inclusive environment for all contributors, regardless of background or identity. As a member of our community, we pledge to respect all individuals and encourage open collaboration and discussion. To ensure a positive experience for everyone, we have established the following guidelines for participation:
 
