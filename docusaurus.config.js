@@ -142,7 +142,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://discord.com/invite/QgZHExcssR",
+            href: "https://discord.gg/GbQAwerJ",
             className: "header-link header-discord-link",
             "aria-label": "Discord",
             position: "right",
