@@ -1,6 +1,6 @@
 # OpenDeepLearning Code of Conduct
 
-OpenDeepLearning is dedicated to providing a welcoming and inclusive environment for all contributors, regardless of background or identity. As a member of our community, we pledge to respect all individuals and encourage open collaboration and discussion. To ensure a positive experience for everyone, we have established the following guidelines for participation:
+[OpenDeepLearning]( https://www.opendeeplearning.xyz) is dedicated to providing a welcoming and inclusive environment for all contributors, regardless of background or identity. As a member of our community, we pledge to respect all individuals and encourage open collaboration and discussion. To ensure a positive experience for everyone, we have established the following guidelines for participation:
 
 ## 1. Inclusivity and Respect
 
@@ -20,7 +20,7 @@ When participating in discussions or making decisions within the OpenDeepLearnin
 
 ## 5. Reporting Violations
 
-If you believe that someone has violated the OpenDeepLearning Code of Conduct, please report it to the project maintainers at [contact@example.com]. All reports will be treated confidentially and will be promptly reviewed and addressed.
+If you believe that someone has violated the OpenDeepLearning Code of Conduct, please report it to the project maintainers at [`teamopendeeplearning` at `gmail` dot `com`]. All reports will be treated confidentially and will be promptly reviewed and addressed.
 
 ## 6. Enforcement
 
