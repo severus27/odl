@@ -20,7 +20,7 @@ When participating in discussions or making decisions within the OpenDeepLearnin
 
 ## 5. Reporting Violations
 
-If you believe that someone has violated the OpenDeepLearning Code of Conduct, please report it to the project maintainers at [`teamopendeeplearning` at `gmail` dot `com`]. All reports will be treated confidentially and will be promptly reviewed and addressed.
+If you believe that someone has violated the OpenDeepLearning Code of Conduct, please report it to the project maintainers via [Email](mailto:teamopendeeplearning@gmail.com) [`teamopendeeplearning` at `gmail` dot `com`]. All reports will be treated confidentially and will be promptly reviewed and addressed.
 
 ## 6. Enforcement
 
