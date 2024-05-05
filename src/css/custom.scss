@@ -20,38 +20,14 @@
   --ifm-color-primary-lighter: #24c19f;
   --ifm-color-primary-lightest: #0ba37f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background: #191919;
+  background: #171717;
 
   .navbar {
-    background: #191919;
-    height: 61px;
+    background: #171717;
     border-bottom: 0.8px solid #44494F;
   }
 }
-
 // ------------------------------
-
-// ----------- SEARCH -----------
-.DocSearch-Button {
-  border-radius: 4px !important ;
-  // border: 0.8px solid #44494F !important;
-}
-
-.DocSearch-Search-Icon {
-  height: 17px;
-  width: 17px;
-  margin-left: 3px !important;
-}
-
-.DocSearch-Button-Placeholder {
-  padding-left: 12px !important;
-}
-
-@media screen and (min-width: 768px) {
-  .DocSearch-Button-Container {
-    min-width: 170px;
-  }
-}
 
 [data-theme="light"] .DocSearch {
   /* --docsearch-primary-color: var(--ifm-color-primary); */
@@ -78,7 +54,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
-  --docsearch-searchbox-background: #272727; 
+  --docsearch-searchbox-background: ; 
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -95,6 +71,10 @@
 // ------------------------------
 
 /* ---------- NAVBAR ---------- */
+.navbar{
+  height: 62px;
+}
+
 .banner {
   text-decoration: none !important;
   font-size: 14.8px;
@@ -118,6 +98,28 @@ B {
 
 .menu__list {
   font-size: 14.5px;
+}
+
+// ----------- SEARCH -----------
+.DocSearch-Button {
+  border-radius: 4px !important ;
+  border: 0.8px solid #44494F !important;
+}
+
+.DocSearch-Search-Icon {
+  height: 17px;
+  width: 17px;
+  margin-left: 3px !important;
+}
+
+.DocSearch-Button-Placeholder {
+  padding-left: 12px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .DocSearch-Button-Container {
+    min-width: 170px;
+  }
 }
 
 /* ------------- ICONS ------------ */

@@ -1,18 +1,18 @@
-/* .content-container {
+/* .content-container{
   padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
   .content-container {
-    padding: 0 35px;
+    padding: 0 20px;
   }
 } */
+
+
 
 .card-container {
   text-decoration: none;
   color: inherit;
-  transition: transform 0.3s ease-in-out;
-  display: block;
 }
 
 .card-container:hover {
@@ -25,15 +25,12 @@
 }
 
 .course-card {
-  border-radius: 8px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  overflow: hidden;
   height: 480px;
-  /* border: 1px solid #d9dce0; */
+  border: 1px solid #44494F;
 }
 
 [data-theme="dark"] .course-card {
-  background: #252525;
+  background: #202020;
 }
 
 .card__image img {
@@ -42,12 +39,18 @@
 }
 
 .card__body {
-  padding: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .title {
-  margin: 0 0 8px;
   font-size: 25px;
   margin: 0 0 20px;
   font-weight: 700;
 }
+
+.card__footer{
+  padding-left: 22px;
+  padding-bottom: 22px;
+}
+

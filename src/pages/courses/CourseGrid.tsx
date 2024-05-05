@@ -6,8 +6,8 @@ import "./CourseCard.css";
 
 const CourseGrid = () => {
   return (
-    <div className="content-container">
-      <Grid container spacing={3}>
+    <div>
+      <Grid container spacing={3.5}>
         {courses.map((course) => (
           <Grid item xs={12} sm={6} md={4} key={course.id}>
             <CourseCard course={course} />

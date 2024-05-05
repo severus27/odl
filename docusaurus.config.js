@@ -162,7 +162,7 @@ const config = {
             title: "Resources",
             items: [
               {
-                label: "Cources",
+                label: "Learn",
                 to: "/docs/intro",
               },
               {
