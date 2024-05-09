@@ -1,14 +1,9 @@
-/* .content-container{
-  padding: 0 20px;
-}
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .content-container {
     padding: 0 20px;
   }
 } */
-
-
 
 .card-container {
   text-decoration: none;
@@ -25,12 +20,13 @@
 }
 
 .course-card {
-  height: 480px;
+  /* border-radius: 10px; */
+  height: 500px;
   border: 1px solid #44494F;
 }
 
 [data-theme="dark"] .course-card {
-  background: #202020;
+  background: #212121;
 }
 
 .card__image img {
@@ -39,8 +35,8 @@
 }
 
 .card__body {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .title {
@@ -50,7 +46,7 @@
 }
 
 .card__footer{
-  padding-left: 22px;
-  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
