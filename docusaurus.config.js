@@ -142,7 +142,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://discord.gg/GbQAwerJ",
+            href: "https://discord.gg/QWYF9nVy",
             className: "header-link header-discord-link",
             "aria-label": "Discord",
             position: "right",
@@ -180,7 +180,7 @@ const config = {
               },
               {
                 label: "Discord",
-                href: "https://discord.com/invite/QgZHExcssR",
+                href: "https://discord.gg/QWYF9nVy",
               },
               {
                 label: "YouTube",

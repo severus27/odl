@@ -12,7 +12,7 @@
 }
 
 [data-theme="dark"] {
-  --ifm-color-primary: #24C19F;
+  --ifm-color-primary: #24c19f;
   --ifm-color-primary-dark: #24c19f;
   --ifm-color-primary-darker: #24c19f;
   --ifm-color-primary-darkest: #24c19f;
@@ -20,12 +20,7 @@
   --ifm-color-primary-lighter: #24c19f;
   --ifm-color-primary-lightest: #0ba37f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background: #181818;
-
-  .navbar {
-    background: #181818;
-    border-bottom: 0.8px solid #44494F;
-  }
+  background: #191919;
 }
 // ------------------------------
 
@@ -37,7 +32,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-color-secondary-lighter);
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-background: var(--ifm-color-secondary-lighter);
   --docsearch-searchbox-focus-background: var(--ifm-color-white);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -54,7 +49,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
-  --docsearch-searchbox-background: #252525; 
+  --docsearch-searchbox-background: ;
   --docsearch-searchbox-focus-background: var(--ifm-color-black);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -71,8 +66,15 @@
 // ------------------------------
 
 /* ---------- NAVBAR ---------- */
-.navbar{
+[data-theme="light"] .navbar {
   height: 62px;
+  border-bottom: 0.8px solid #b8bdc4;
+}
+
+[data-theme="dark"] .navbar {
+  height: 62px;
+  background: #191919;
+  border-bottom: 0.8px solid #44494f;
 }
 
 .banner {
@@ -81,7 +83,7 @@
   font-weight: 500;
 }
 
-.navbar__brand{
+.navbar__brand {
   padding-left: 1px;
 }
 
@@ -104,7 +106,14 @@ B {
 .DocSearch-Button {
   border-radius: 4px !important ;
   height: 35px !important;
-  // border: 0.8px solid #44494F !important;
+}
+
+[data-theme="dark"] .DocSearch-Button {
+  border: 0.8px solid #44494f !important;
+}
+
+[data-theme="light"] .DocSearch-Button {
+  border: 0.8px solid #61666d !important;
 }
 
 .DocSearch-Search-Icon {
@@ -219,11 +228,11 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-.breadcrumbs{
-  padding-top: 4px !important;
-}
+// .breadcrumbs {
+//   padding-top: 3px !important;
+// }
 
-ARTICLE H1{
+ARTICLE H1 {
   padding-top: 5px !important;
 }
 
@@ -238,7 +247,7 @@ TIME {
 /* ---------------------------- */
 
 [data-theme="dark"] pre code {
-  background: #212121
+  background: #212121;
 }
 
 /* ---------- BADGES ------------ */

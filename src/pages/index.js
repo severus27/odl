@@ -6,6 +6,8 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.scss';
+import { StrictMode } from "react";
+import Globe from '../components/Globe/globe';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -37,6 +39,9 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+           <StrictMode>
+    <Globe />
+  </StrictMode>
       </main>
     </Layout>
   );
