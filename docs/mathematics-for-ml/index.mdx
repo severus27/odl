@@ -1,0 +1,33 @@
+# Mathematics for Machine Learning
+
+Machine learning is a rapidly evolving field that has revolutionized how we approach problem-solving and decision-making processes. At its core, machine learning relies heavily on mathematical principles and techniques to extract insights from data, build predictive models, and optimize their performance. 
+
+In this course, we will explore the essential mathematical foundations that underpin many of the most widely used machine learning algorithms and models.
+
+## Linear Algebra
+
+Linear algebra is a fundamental branch of mathematics that plays a crucial role in machine learning. It provides the language and tools for representing and manipulating high-dimensional data, which is often the case in real-world applications. Understanding concepts like vectors, matrices, linear transformations, and eigenvalue decompositions is essential for comprehending and implementing algorithms such as principal component analysis (PCA), singular value decomposition (SVD), and neural networks. Additionally, linear algebra techniques are used for dimensionality reduction, feature extraction, and data compression, which are critical tasks in many machine learning pipelines.
+
+<details>
+  <summary>Linear Algebra for Machine Learning</summary>
+
+In case you are wondering how Remark and Rehype are different, here is a good example. `remark-math` operates on the Markdown AST, where it sees text like `$...$`, and all it does is transform that to the JSX `<span class="math math-inline">...</span>` without doing too much with the content. This decouples the extraction of math formulae from their rendering, which means you can swap $\KaTeX$ out with other math renderers, like MathJax (with [`rehype-mathjax`](https://github.com/remarkjs/remark-math/tree/main/packages/rehype-mathjax)), just by replacing the Rehype plugin.
+
+Next, the `rehype-katex` operates on the Hypertext AST where everything has been converted to HTML-like tags already. It traverses all the elements with `math` class and uses $\KaTeX$ to parse and render the content to actual HTML.
+
+</details>
+
+## Calculus
+
+Calculus is indispensable for optimizing machine learning models and understanding their behavior. Concepts like derivatives, gradients, and partial derivatives are used extensively in optimization algorithms like gradient descent, which are the workhorses of many machine learning models. Calculus also enables us to quantify and minimize errors in model predictions, as well as to understand the sensitivity of models to changes in input data or parameters. Furthermore, techniques like numerical integration and approximation are essential for solving complex mathematical problems computationally, which is a core aspect of implementing and optimizing machine learning algorithms.
+
+## Probability and Statistics
+
+Machine learning is inherently probabilistic, as it deals with making predictions and inferences from data that often contains noise and uncertainty. Probability theory and statistics provide the foundational principles for modeling this uncertainty, making informed decisions, and evaluating the performance of machine learning models. Concepts like probability distributions, Bayes' theorem, maximum likelihood estimation, and hypothesis testing are essential for tasks such as classification, regression, and unsupervised learning. Additionally, techniques like Bayesian inference and Monte Carlo methods are used in advanced machine learning models, such as Bayesian networks and Markov Chain Monte Carlo (MCMC) algorithms.
+
+## Numerical Methods
+
+While many machine learning algorithms are derived from mathematical theories, their practical implementation often requires numerical techniques to approximate solutions or optimize computationally intensive processes. Numerical methods, such as interpolation, numerical integration and differentiation, and iterative optimization techniques, are crucial for efficiently solving the complex mathematical problems that arise in machine learning. These methods enable us to translate theoretical models into practical, computationally feasible implementations.
+
+Throughout the course, we will explore these mathematical concepts in depth, using real-world examples and hands-on exercises to reinforce their applications in machine learning. By developing a strong understanding of the underlying mathematics, you will gain a deeper comprehension of how machine learning models work, enabling you to more effectively develop, analyze, and optimize these powerful tools.
+

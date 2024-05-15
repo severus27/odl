@@ -11,16 +11,17 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] {
+html[data-theme="dark"] {
   --ifm-color-primary: #24c19f;
   --ifm-color-primary-dark: #24c19f;
   --ifm-color-primary-darker: #24c19f;
   --ifm-color-primary-darkest: #24c19f;
   --ifm-color-primary-light: #24c19f;
   --ifm-color-primary-lighter: #24c19f;
-  --ifm-color-primary-lightest: #0ba37f;
+  --ifm-color-primary-lightest: #24c19f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background: #191919;
+  --ifm-toc-border-color: #333333 ;
+  background: #161616;
 }
 // ------------------------------
 
@@ -32,7 +33,7 @@
   /* Modal */
   --docsearch-modal-background: var(--ifm-color-secondary-lighter);
   /* Search box */
-  --docsearch-searchbox-background: var(--ifm-color-secondary-lighter);
+  --docsearch-searchbox-background: ;
   --docsearch-searchbox-focus-background: var(--ifm-color-white);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -68,13 +69,13 @@
 /* ---------- NAVBAR ---------- */
 [data-theme="light"] .navbar {
   height: 62px;
-  border-bottom: 0.8px solid #b8bdc4;
+  border-bottom: 0.95px solid #b8bdc4;
 }
 
 [data-theme="dark"] .navbar {
   height: 62px;
-  background: #191919;
-  border-bottom: 0.8px solid #44494f;
+  background: #161616;
+  border-bottom: 1px solid #333333;
 }
 
 .banner {
@@ -98,28 +99,75 @@ B {
   padding-bottom: 4px;
 }
 
-.menu__list {
+ul.menu__list > li > a.menu__link--active {
+  border-right: 1px solid var(--ifm-color-primary);
+}
+
+[data-theme="dark"] .menu__link--active{
+  background-color: #1A2724;
+}
+
+[data-theme="light"] .menu__link--active{
+  background-color: #E3FCF7;
+}
+
+.menu__link {
   font-size: 14.5px;
 }
+
+.menu__link {
+  border-radius: 4px 0 0 4px;
+}
+
+.menu__link {
+  /* Background tint only for menu links in sidebar */
+  --ifm-menu-color-background-active: var(--docs-color-primary-tint);
+}
+
+// .menu__list-item-collapsible:hover {
+//   background: none;
+// }
+
+/* Disables link hover decoration enabled by default in docusaurus v2.0.0-beta.22 */
+.navbar__link,
+.menu__link,
+.table-of-contents__link,
+.pagination-nav,
+.footer {
+  --ifm-link-hover-decoration: none;
+}
+
+.breadcrumbs__link{
+  background: none !important;
+}
+
 
 // ----------- SEARCH -----------
 .DocSearch-Button {
   border-radius: 4px !important ;
-  height: 35px !important;
+  // height: 35px !important;
+  margin-left: 6px !important;
+}
+
+.DocSearch-Button-Key {
+  background: #333333 !important;
+  top: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 [data-theme="dark"] .DocSearch-Button {
-  border: 0.8px solid #44494f !important;
+  border: 1px solid #333333 !important;
 }
 
 [data-theme="light"] .DocSearch-Button {
-  border: 0.8px solid #61666d !important;
+  border: 0.95px solid #61666d !important;
 }
 
 .DocSearch-Search-Icon {
   height: 17px;
   width: 17px;
-  margin-left: 3px !important;
+  margin-left: 4px !important;
 }
 
 .DocSearch-Button-Placeholder {
@@ -228,10 +276,6 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-// .breadcrumbs {
-//   padding-top: 3px !important;
-// }
-
 ARTICLE H1 {
   padding-top: 5px !important;
 }
@@ -248,6 +292,10 @@ TIME {
 
 [data-theme="dark"] pre code {
   background: #212121;
+}
+
+[data-theme="dark"] .button--outline{
+  background-color: #202020 ;
 }
 
 /* ---------- BADGES ------------ */
@@ -280,3 +328,5 @@ TIME {
   }
 }
 /* ---------------------------- */
+
+
