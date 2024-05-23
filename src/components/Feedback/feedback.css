@@ -1,0 +1,51 @@
+.feedback-container {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.feedback-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.feedback-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  gap: 1rem;
+}
+
+.feedback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 34px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .feedback-button:hover{
+  border: #04A380;
+} */
+
+.helpful {
+  color: #04A380;
+}
+
+.not-helpful {
+  color: #FF6664;
+}
+
+.thumbs-up:hover {
+  color: #04A380;
+}
+
+.thumbs-down:hover{
+  color: #FF6664;
+}

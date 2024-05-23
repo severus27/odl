@@ -1,5 +1,8 @@
 /* -------------- THEME ------------- */
 :root {
+  // --ifm-spacing-horizontal: 1.5rem;
+
+  /* Theme colors */
   --ifm-color-primary: #1b7f64;
   --ifm-color-primary-dark: #1b7f64;
   --ifm-color-primary-darker: #1b7f64;
@@ -9,6 +12,12 @@
   --ifm-color-primary-lightest: #1b7f64;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-breadcrumb-padding-horizontal: 0;
+
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-height: 62px;
 }
 
 html[data-theme="dark"] {
@@ -20,8 +29,13 @@ html[data-theme="dark"] {
   --ifm-color-primary-lighter: #24c19f;
   --ifm-color-primary-lightest: #24c19f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-toc-border-color: #333333 ;
-  background: #161616;
+
+  --ifm-toc-border-color: #333333;
+  --ifm-background-color: #181818;
+
+  pre code {
+    background: #212121;
+  }
 }
 // ------------------------------
 
@@ -68,13 +82,11 @@ html[data-theme="dark"] {
 
 /* ---------- NAVBAR ---------- */
 [data-theme="light"] .navbar {
-  height: 62px;
-  border-bottom: 0.95px solid #b8bdc4;
+  border-bottom: 1px solid #dadde1;
 }
 
 [data-theme="dark"] .navbar {
-  height: 62px;
-  background: #161616;
+  background: #181818;
   border-bottom: 1px solid #333333;
 }
 
@@ -99,34 +111,30 @@ B {
   padding-bottom: 4px;
 }
 
+// ----------- Sidebar -----------
+.menu {
+  margin-top: 5px;
+}
+
 ul.menu__list > li > a.menu__link--active {
   border-right: 1px solid var(--ifm-color-primary);
 }
 
-[data-theme="dark"] .menu__link--active{
-  background-color: #1A2724;
+[data-theme="dark"] .menu__link--active {
+  background-color: #1a2724;
 }
 
-[data-theme="light"] .menu__link--active{
-  background-color: #E3FCF7;
+[data-theme="light"] .menu__link--active {
+  background-color: #e3fcf7;
 }
 
 .menu__link {
   font-size: 14.5px;
-}
-
-.menu__link {
   border-radius: 4px 0 0 4px;
-}
 
-.menu__link {
   /* Background tint only for menu links in sidebar */
   --ifm-menu-color-background-active: var(--docs-color-primary-tint);
 }
-
-// .menu__list-item-collapsible:hover {
-//   background: none;
-// }
 
 /* Disables link hover decoration enabled by default in docusaurus v2.0.0-beta.22 */
 .navbar__link,
@@ -137,31 +145,43 @@ ul.menu__list > li > a.menu__link--active {
   --ifm-link-hover-decoration: none;
 }
 
-.breadcrumbs__link{
-  background: none !important;
-}
-
-
-// ----------- SEARCH -----------
+// ----------- Search -----------
 .DocSearch-Button {
   border-radius: 4px !important ;
-  // height: 35px !important;
+  height: 35px !important;
   margin-left: 6px !important;
 }
 
-.DocSearch-Button-Key {
-  background: #333333 !important;
+.DocSearch-Button-Keys{
+  padding-left: 10px;
+}
+
+[data-theme="dark"] .DocSearch-Button-Key {
+  background: #252525 !important;
   top: 0 !important;
   padding: 0 !important;
   box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  border: 0.9px solid #444;
+}
+
+[data-theme="light"] .DocSearch-Button-Key {
+  top: 0 !important;
+  border: 1px solid #dadde1;
+  padding: 0 !important;
+  display: flex;
+  box-shadow: none !important;
+  align-items: center;
+  border: 0.9px solid #C0C0C2;
 }
 
 [data-theme="dark"] .DocSearch-Button {
-  border: 1px solid #333333 !important;
+  border: 1px solid #353535 !important;
 }
 
 [data-theme="light"] .DocSearch-Button {
-  border: 0.95px solid #61666d !important;
+  border: 1px solid #dadde1 !important;
 }
 
 .DocSearch-Search-Icon {
@@ -176,11 +196,11 @@ ul.menu__list > li > a.menu__link--active {
 
 @media screen and (min-width: 768px) {
   .DocSearch-Button-Container {
-    min-width: 170px;
+    min-width: 165px;
   }
 }
 
-/* ------------- ICONS ------------ */
+/* ------------- Icons ------------ */
 .header-github-link:before {
   content: "";
   width: 24px;
@@ -234,7 +254,7 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-/* ----------- FOOTER ----------- */
+/* ----------- Footer ----------- */
 .footer__links {
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -276,29 +296,31 @@ html[data-theme="dark"] .header-discord-link:before {
 }
 /* ---------------------------- */
 
-ARTICLE H1 {
-  padding-top: 5px !important;
-}
-
-.menu {
-  margin-top: 5px;
-}
-
-/* ------ LAST UPDATED TIME ----- */
 TIME {
+  // Last Updated Time
   font-size: 13.33px;
 }
-/* ---------------------------- */
 
-[data-theme="dark"] pre code {
-  background: #212121;
+.markdown h1:first-child {
+  --ifm-h1-font-size: 36px;
+  // padding-top: 5px;
 }
 
-[data-theme="dark"] .button--outline{
-  background-color: #202020 ;
+ARTICLE {
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
-/* ---------- BADGES ------------ */
+// .markdown h2:first-child {
+//   --ifm-h1-font-size: 28px;
+// }
+
+[data-theme="dark"] .button--outline {
+  // Previous & Next button
+  background-color: #202020;
+}
+
+/* ---------- Badges ------------ */
 .badges-container {
   display: flex;
   flex-wrap: wrap;
@@ -328,5 +350,3 @@ TIME {
   }
 }
 /* ---------------------------- */
-
-
